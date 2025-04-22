@@ -26,4 +26,5 @@ public class InterbankApplication implements CommandLineRunner {
         List<Transaction> transactions = transactionService.loadTransactions(csvPath);
         transactionService.generateReport(transactions);
     }
+
 }
